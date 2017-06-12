@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'article',
+
      
 ]
 from django.conf import global_settings
