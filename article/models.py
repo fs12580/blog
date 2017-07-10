@@ -18,3 +18,10 @@ class Article(models.Model) :
 		return self.title
 	class Meta: #按时间下降排序
 		ordering = ['-date_time']	
+
+class User(models.Model):
+	username = models.CharField(max_length=50)
+	password = models.CharField(max_length=50)
+
+	def __unicode__(self):
+		return self.username

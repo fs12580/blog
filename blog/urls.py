@@ -31,4 +31,5 @@ urlpatterns = [
         url(r'^archives/$','article.views.archives', name='archives'),
         url(r'^search/$','article.views.blog_search', name = 'search'),
         url(r'^feed/$', RSSFeed(), name = "RSS"),  #新添加的urlconf, 并将name设置为RSS, 方便在模板中使用url
+        url(r'^online/', include('article.urls')),
     ]
