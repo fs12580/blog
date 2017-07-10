@@ -17,7 +17,7 @@ Including another URLconf
 from django.conf.urls import patterns,include,url
 from django.contrib import admin
 from article import views as article_views
-from django_comments.models import Comment
+
 from article.views import RSSFeed
 urlpatterns = [
 	# Examples:
